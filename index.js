@@ -2,7 +2,7 @@
 var express = require('express')
   , morgan = require('morgan')
   , app = express()
-  , quotes = require('./data').quotes
+  , barth = require('barth')
 
 app.set('views', __dirname + '/views')
 
@@ -13,8 +13,8 @@ if (app.get('env') === 'development') {
 app.use(express.static('./public'))
 
 app.get('/', function(req, res) {
-  var pick = Math.floor(Math.random() * quotes.length)
-  res.render('index.jade', {quote: quotes[pick].text})
+  var one = barth()
+  res.render('index.jade', {quote: one.text})
 })
 
 app.listen(process.env.PORT || 4000)
