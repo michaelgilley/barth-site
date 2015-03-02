@@ -13,7 +13,7 @@ if (app.get('env') === 'development') {
 app.use(express.static('./public'))
 
 app.get('/', function(req, res) {
-  var pick = Math.floor(Math.random() * quotes.length - 1)
+  var pick = Math.floor(Math.random() * quotes.length)
   res.render('index.jade', {quote: quotes[pick].text})
 })
 
