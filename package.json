@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/michaelgilley/barth.git"
+    "url": "https://github.com/michaelgilley/barth-site.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/michaelgilley/barth/issues"
+    "url": "https://github.com/michaelgilley/barth-site/issues"
   },
-  "homepage": "https://github.com/michaelgilley/barth",
+  "homepage": "https://github.com/michaelgilley/barth-site",
   "dependencies": {
     "express": "^4.12.1",
     "jade": "^1.9.2",
