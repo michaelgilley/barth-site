@@ -1,0 +1,24 @@
+{
+  "name": "barth",
+  "version": "1.0.0",
+  "description": "A Karl Barth quote a day.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelgilley/barth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelgilley/barth/issues"
+  },
+  "homepage": "https://github.com/michaelgilley/barth",
+  "dependencies": {
+    "express": "^4.12.1",
+    "jade": "^1.9.2",
+    "morgan": "^1.5.1"
+  }
+}
