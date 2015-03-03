@@ -2,15 +2,27 @@
 body {
   font-family: 'Titillium Web', sans-serif;
   color: #000;
-  background: #000 url('/img/karl_barth.jpg') no-repeat center top fixed;
+  background-color: #000;
+}
+
+#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('/img/karl_barth.jpg') no-repeat center top fixed;
   background-size: cover;
 }
 
 #body {
   position: absolute;
   top: 1.5em;
-  right: 3em;
+  right: 2.5em;
   width: 40%;
+  max-height: 15.4em;
+  padding-right: 0.5em;
+  overflow: auto;
   font-size: 24px;
   quotes: "“" "”" "‘" "’";
 }
@@ -30,6 +42,34 @@ body {
 #body .ref {
   margin-top: 1em;
   text-align: right;
-  font-size: 16px;
+  font-size: .6666em;
   font-style: italic;
+}
+
+@media (max-width: 970px) {
+  #body {
+    right: 1.5em;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: 100% auto;
+  }
+
+  #bg {
+    position: static;
+    padding-bottom: 56.25%;
+    background-size: 100%;
+  }
+
+  #body {
+    position: static;
+    margin-top: 1em;
+    width: auto;
+    max-height: none;
+    padding: 0 15px;
+    color: #fff;
+  }
 }
