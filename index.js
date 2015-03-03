@@ -13,9 +13,7 @@ if (app.get('env') === 'development') {
 app.use(express.static('./public'))
 
 app.get('/', function(req, res) {
-  var q = barth.daily({textOnly: true})
-  console.log('Quote', q)
-  res.render('index.jade', {quote: q})
+  res.render('index.jade', {quote: barth.daily({textOnly: true})})
 })
 
 app.listen(process.env.PORT || 4000)
