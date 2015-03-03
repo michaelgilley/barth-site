@@ -13,7 +13,7 @@ if (app.get('env') === 'development') {
 app.use(express.static('./public'))
 
 app.get('/', function(req, res) {
-  var q = barth.daily({textOnly: true})}
+  var q = barth.daily({textOnly: true})
   console.log('Quote', q)
   res.render('index.jade', {quote: q})
 })
